@@ -3,7 +3,7 @@ function logar() {
     var senha = document.getElementById('inputSenha').value;
 
     if(usuario == "admin" && senha == "1234"){
-     window.location.href = "/page.html"
+     window.location.href = "page.html"
     }else {
         alert("Usúario/Senha incorretos! Tentar novamente")
     }
