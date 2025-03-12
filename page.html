@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>        
+      
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d3d3d3;
+           } 
+       
+        h1{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;   
+          }
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+
+        .bloco{
+          
+            background-color: gray;
+            height: 450px;
+            width: 500px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+             flex-direction: column;
+            }
+            button{
+                width: 220px;
+                height: 35px;
+                border: none;
+                border-radius: 4px;
+               background-color: black;
+               color: aliceblue;
+               font-size: 20px;
+               cursor: pointer;
+               margin-top: 20px; 
+            }
+
+            label {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+            input {
+                height: 30px;
+                width: 200px;
+                outline: 0px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+                p{
+                    font-size: 10px;
+                }
+
+   
+   
+   
+    </style>
+ <div class="bloco">
+    <h1>Seja bem vindo </h1>
+    <h2>Média do Aluno</h2>
+    <label for="">Nota 1</label>
+    <input type="text" id="nota1">
+    <br> 
+    <label for="">Nota 2</label>
+    <input type="text" id="nota2">
+    <br>   
+    <label for="">Nota 3</label>
+    <input type="text" id="nota3">
+    <br>
+    <label for="">Nota 4</label>
+    <input type="text" id="nota4">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+  
+
+    <p id="notaResultado1">Aguardando nota 1...</p>
+    <p id="notaResultado2">Aguardando nota 2...</p>
+    <p id="notaResultado3">Aguardando nota 3...</p>
+    <p id="notaResultado4">Aguardando nota 4...</p>
+    <p id="mediaAluno">Agurdando Média...</p>
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
